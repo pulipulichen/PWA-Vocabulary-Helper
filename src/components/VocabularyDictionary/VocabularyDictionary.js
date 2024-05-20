@@ -16,7 +16,7 @@ let app = {
     },
   },
   computed: {
-    computedButtonsClassList () {
+    computedButtonClassList () {
       let dictionaryText = this.db.localConfig.dictionaryText
 
       if (dictionaryText.trim() === '') {

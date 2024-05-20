@@ -1,5 +1,9 @@
-<div class="Index"
+<div class="Index ui text container segment"
   v-show="db.config.inited">
+
+  <h1 class="ui horizontal divider header">
+    {{ $t('Vocabulary Helper') }}
+  </h1>
   
   <LanguageSelector 
     ref="LanguageSelector"
@@ -14,6 +18,6 @@
   <VocabularyDictionary
     ref="VocabularyDictionary"
     :db="db">
-  </VocabularyDictionary>
+  </VocabularyDictionary> 
 
 </div>

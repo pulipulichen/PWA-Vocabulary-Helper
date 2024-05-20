@@ -18,27 +18,29 @@ let app = {
   },
   computed: {
     computedTranslateButtonClassList () {
-      let classList = []
+      let classList = ['ui', 'fluid']
 
       let vocabularyInput = this.db.localConfig.vocabularyInput
       if (vocabularyInput.trim() === '') {
         classList.push('disabled')
-        return classList
       }
       else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
-        classList.push('disabled')
+        classList.push('positive')
       }
+
+      classList.push('button')
 
       return classList
     },
     computedAddDictionaryButtonClassList () {
-      let classList = []
+      let classList = ['ui', 'fluid']
 
       let vocabularyOutput = this.db.localConfig.vocabularyOutput
       if (vocabularyOutput.trim() === '') {
         classList.push('disabled')
-        return classList
       }
+
+      classList.push('button')
       
       return classList
     }
