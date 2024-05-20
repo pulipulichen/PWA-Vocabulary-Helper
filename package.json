@@ -31,6 +31,7 @@
     "url": "https://github.com/pulipulichen/PWA-Vocabulary-Helper/issues"
   },
   "homepage": "https://github.com/pulipulichen/PWA-Vocabulary-Helper#readme",
+  "doi": "10.5281/zenodo.11222774",
   "devDependencies": {
     "@babel/core": "7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",

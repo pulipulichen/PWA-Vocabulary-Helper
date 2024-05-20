@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/803200441.svg)](https://zenodo.org/doi/10.5281/zenodo.11222774)
+
 # PWA-Vocabulary-Helper
 
 To build a list of vocabularies with phonetic symbols and translations.
