@@ -131,10 +131,10 @@ let app = {
 
         let key = this.buildCacheKey(vocabulary)
 
-        if (this.db.localConfig.queryCache[key]) {
+        if (this.db.config.queryCache[key]) {
           return {
             vocabulary,
-            note: this.db.localConfig.queryCache[key]
+            note: this.db.config.queryCache[key]
           }
         }
 
@@ -159,7 +159,7 @@ let app = {
         resultMap[vocabulary] = line
 
         let key = this.buildCacheKey(vocabulary)
-        this.db.localConfig.queryCache[key] = line
+        this.db.config.queryCache[key] = line
       })
 
       for (let i = 0; i < vocabularyCached.length; i++) {

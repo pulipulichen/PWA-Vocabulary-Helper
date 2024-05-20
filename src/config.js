@@ -15,7 +15,9 @@ let config = {
     'chinese-traditional'
   ],
 
-  vocabularyOutputCopied: true
+  vocabularyOutputCopied: true,
+
+  queryCache: {},
 }
 
 // ----------------------------------------------------------------
