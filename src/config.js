@@ -1,4 +1,4 @@
-let appName = 'PWA-Online-Voting'
+let appName = 'PWA-Vocabulary-Helper'
 
 let config = {
   version: '20240520-1716',
@@ -15,7 +15,7 @@ let config = {
     'chinese-traditional'
   ],
 
-  vocabularyOutputCopied: false
+  vocabularyOutputCopied: true
 }
 
 // ----------------------------------------------------------------

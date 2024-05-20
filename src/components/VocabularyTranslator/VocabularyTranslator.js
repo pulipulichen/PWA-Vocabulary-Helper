@@ -122,20 +122,19 @@ let app = {
       let dictionaryMap = this.$parent.$refs.VocabularyDictionary.dictionaryMap
 
       return vocabularyList.map(vocabulary => {
+        if (dictionaryMap[vocabulary]) {
+          return {
+            vocabulary,
+            note: dictionaryMap[vocabulary],
+          }
+        }
+
         let key = this.buildCacheKey(vocabulary)
 
         if (this.db.localConfig.queryCache[key]) {
           return {
             vocabulary,
             note: this.db.localConfig.queryCache[key]
-          }
-        }
-
-        // @TODO 這裡還需要加入字典的查詢
-        if (dictionaryMap[vocabulary]) {
-          return {
-            vocabulary,
-            note: dictionaryMap[vocabulary],
           }
         }
 
