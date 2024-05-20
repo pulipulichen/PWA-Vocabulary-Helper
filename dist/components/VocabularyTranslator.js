@@ -1,2 +1,500 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{100:function(t,e){t.exports=function(t){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t))return Array.from(t)}},101:function(t,e){t.exports=function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}},62:function(t,e,r){var n=r(90),o=("string"==typeof n&&(n=[[t.i,n,""]]),{});o.insert="head",o.singleton=!1,r(9)(n,o);n.locals&&(t.exports=n.locals)},63:function(t,e){t.exports=function(t){t.options.__i18n=t.options.__i18n||[],t.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}'),delete t.options._Ctor}},89:function(t,e,r){"use strict";var n=r(62);r.n(n).a},90:function(t,e,r){(t.exports=r(8)(!0)).push([t.i,"","",{version:3,sources:[],names:[],mappings:"",file:"VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&"}])},91:function(t,e,r){"use strict";var n=r(63);e.default=r.n(n).a},96:function(t,e,r){"use strict";r.r(e);function n(){var e=this,t=e.$createElement;return(t=e._self._c||t)("form",{staticClass:"VocabularyTranslator ui grid form"},[t("div",{staticClass:"equal width row"},[t("div",{staticClass:"column"},[t("div",{staticClass:"field"},[t("label",{attrs:{for:"vocabulary_input"}},[e._v(e._s(e.$t("Vocabulary Input")))]),e._v(" "),t("textarea",{directives:[{name:"model",rawName:"v-model",value:e.db.localConfig.vocabularyInput,expression:"db.localConfig.vocabularyInput"}],attrs:{id:"vocabulary_input"},domProps:{value:e.db.localConfig.vocabularyInput},on:{input:function(t){t.target.composing||e.$set(e.db.localConfig,"vocabularyInput",t.target.value)}}}),e._v(" "),t("button",{staticClass:"ui fluid button",class:e.computedTranslateButtonClassList,attrs:{type:"button"},on:{click:e.startTranslate}},[e._v("\n              "+e._s(e.$t("Translate"))+"\n            ")])])]),e._v(" "),t("div",{staticClass:"column"},[t("div",{staticClass:" field"},[t("label",{attrs:{for:"vocabulary_output"}},[e._v(e._s(e.$t("Vocabulary Output")))]),e._v(" "),t("textarea",{directives:[{name:"model",rawName:"v-model",value:e.db.localConfig.vocabularyOutput,expression:"db.localConfig.vocabularyOutput"}],attrs:{id:"vocabulary_output"},domProps:{value:e.db.localConfig.vocabularyOutput},on:{input:function(t){t.target.composing||e.$set(e.db.localConfig,"vocabularyOutput",t.target.value)}}}),e._v(" "),t("button",{staticClass:"ui fluid button",class:e.computedAddDictionaryButtonClassList,attrs:{type:"button"},on:{click:e.addDictionary}},[e._v("\n              "+e._s(e.$t("Add to Dictionary"))+"\n            ")])])])])])}n._withStripped=!0;var o=r(1),L=r.n(o),o=r(98),i=r.n(o),o=r(0),o=r.n(o);function E(){/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */E=function(){return a};var a={},t=Object.prototype,c=t.hasOwnProperty,s=Object.defineProperty||function(t,e,r){t[e]=r.value},e="function"==typeof Symbol?Symbol:{},n=e.iterator||"@@iterator",r=e.asyncIterator||"@@asyncIterator",o=e.toStringTag||"@@toStringTag";function i(t,e,r){return Object.defineProperty(t,e,{value:r,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{i({},"")}catch(t){i=function(t,e,r){return t[e]=r}}function u(t,e,r,n){var o,i,a,u,e=e&&e.prototype instanceof p?e:p,e=Object.create(e.prototype),n=new _(n||[]);return s(e,"_invoke",{value:(o=t,i=r,a=n,u="suspendedStart",function(t,e){if("executing"===u)throw new Error("Generator is already running");if("completed"===u){if("throw"===t)throw e;return C()}for(a.method=t,a.arg=e;;){var r=a.delegate;if(r){r=function t(e,r){var n=r.method,o=e.iterator[n];if(void 0===o)return r.delegate=null,"throw"===n&&e.iterator.return&&(r.method="return",r.arg=void 0,t(e,r),"throw"===r.method)||"return"!==n&&(r.method="throw",r.arg=new TypeError("The iterator does not provide a '"+n+"' method")),f;n=l(o,e.iterator,r.arg);if("throw"===n.type)return r.method="throw",r.arg=n.arg,r.delegate=null,f;o=n.arg;return o?o.done?(r[e.resultName]=o.value,r.next=e.nextLoc,"return"!==r.method&&(r.method="next",r.arg=void 0),r.delegate=null,f):o:(r.method="throw",r.arg=new TypeError("iterator result is not an object"),r.delegate=null,f)}(r,a);if(r){if(r===f)continue;return r}}if("next"===a.method)a.sent=a._sent=a.arg;else if("throw"===a.method){if("suspendedStart"===u)throw u="completed",a.arg;a.dispatchException(a.arg)}else"return"===a.method&&a.abrupt("return",a.arg);u="executing";r=l(o,i,a);if("normal"===r.type){if(u=a.done?"completed":"suspendedYield",r.arg===f)continue;return{value:r.arg,done:a.done}}"throw"===r.type&&(u="completed",a.method="throw",a.arg=r.arg)}})}),e}function l(t,e,r){try{return{type:"normal",arg:t.call(e,r)}}catch(t){return{type:"throw",arg:t}}}a.wrap=u;var f={};function p(){}function h(){}function d(){}var e={},v=(i(e,n,function(){return this}),Object.getPrototypeOf),v=v&&v(v(x([]))),y=(v&&v!==t&&c.call(v,n)&&(e=v),d.prototype=p.prototype=Object.create(e));function g(t){["next","throw","return"].forEach(function(e){i(t,e,function(t){return this._invoke(e,t)})})}function b(a,u){var e;s(this,"_invoke",{value:function(r,n){function t(){return new u(function(t,e){!function e(t,r,n,o){var i,t=l(a[t],a,r);if("throw"!==t.type)return(r=(i=t.arg).value)&&"object"==L()(r)&&c.call(r,"__await")?u.resolve(r.__await).then(function(t){e("next",t,n,o)},function(t){e("throw",t,n,o)}):u.resolve(r).then(function(t){i.value=t,n(i)},function(t){return e("throw",t,n,o)});o(t.arg)}(r,n,t,e)})}return e=e?e.then(t,t):t()}})}function m(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function w(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function _(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(m,this),this.reset(!0)}function x(e){if(e){var r,t=e[n];if(t)return t.call(e);if("function"==typeof e.next)return e;if(!isNaN(e.length))return r=-1,(t=function t(){for(;++r<e.length;)if(c.call(e,r))return t.value=e[r],t.done=!1,t;return t.value=void 0,t.done=!0,t}).next=t}return{next:C}}function C(){return{value:void 0,done:!0}}return s(y,"constructor",{value:h.prototype=d,configurable:!0}),s(d,"constructor",{value:h,configurable:!0}),h.displayName=i(d,o,"GeneratorFunction"),a.isGeneratorFunction=function(t){t="function"==typeof t&&t.constructor;return!!t&&(t===h||"GeneratorFunction"===(t.displayName||t.name))},a.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,i(t,o,"GeneratorFunction")),t.prototype=Object.create(y),t},a.awrap=function(t){return{__await:t}},g(b.prototype),i(b.prototype,r,function(){return this}),a.AsyncIterator=b,a.async=function(t,e,r,n,o){void 0===o&&(o=Promise);var i=new b(u(t,e,r,n),o);return a.isGeneratorFunction(e)?i:i.next().then(function(t){return t.done?t.value:i.next()})},g(y),i(y,o,"Generator"),i(y,n,function(){return this}),i(y,"toString",function(){return"[object Generator]"}),a.keys=function(t){var e,r=Object(t),n=[];for(e in r)n.push(e);return n.reverse(),function t(){for(;n.length;){var e=n.pop();if(e in r)return t.value=e,t.done=!1,t}return t.done=!0,t}},a.values=x,_.prototype={constructor:_,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(w),!t)for(var e in this)"t"===e.charAt(0)&&c.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(r){if(this.done)throw r;var n=this;function t(t,e){return i.type="throw",i.arg=r,n.next=t,e&&(n.method="next",n.arg=void 0),!!e}for(var e=this.tryEntries.length-1;0<=e;--e){var o=this.tryEntries[e],i=o.completion;if("root"===o.tryLoc)return t("end");if(o.tryLoc<=this.prev){var a=c.call(o,"catchLoc"),u=c.call(o,"finallyLoc");if(a&&u){if(this.prev<o.catchLoc)return t(o.catchLoc,!0);if(this.prev<o.finallyLoc)return t(o.finallyLoc)}else if(a){if(this.prev<o.catchLoc)return t(o.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<o.finallyLoc)return t(o.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;0<=r;--r){var n=this.tryEntries[r];if(n.tryLoc<=this.prev&&c.call(n,"finallyLoc")&&this.prev<n.finallyLoc){var o=n;break}}var i=(o=o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc?null:o)?o.completion:{};return i.type=t,i.arg=e,o?(this.method="next",this.next=o.finallyLoc,f):this.complete(i)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),f},finish:function(t){for(var e=this.tryEntries.length-1;0<=e;--e){var r=this.tryEntries[e];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),w(r),f}},catch:function(t){for(var e=this.tryEntries.length-1;0<=e;--e){var r,n,o=this.tryEntries[e];if(o.tryLoc===t)return"throw"===(r=o.completion).type&&(n=r.arg,w(o)),n}throw new Error("illegal catch attempt")},delegateYield:function(t,e,r){return this.delegate={iterator:x(t),resultName:e,nextLoc:r},"next"===this.method&&(this.arg=void 0),f}},a}var a,u={props:["db"],components:{},data:function(){return this.$i18n.locale=this.db.localConfig.locale,{isWaiting:!1}},watch:{"db.localConfig.locale":function(){this.$i18n.locale=this.db.localConfig.locale},"db.localConfig.vocabularyInput":function(){this.db.localConfig.setVocabularyTime=(new Date).getTime()}},computed:{computedTranslateButtonClassList:function(){var t=["ui","fluid"];return""===this.db.localConfig.vocabularyInput.trim()||!0===this.isWaiting?t.push("disabled"):this.db.localConfig.setVocabularyTime>this.db.localConfig.translateTime&&t.push("positive"),t.push("button"),t},computedAddDictionaryButtonClassList:function(){var t=["ui","fluid"];return""===this.db.localConfig.vocabularyOutput.trim()&&t.push("disabled"),t.push("button"),t}},mounted:function(){},methods:{startTranslate:(a=o()(E().mark(function t(){var e;return E().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return this.isWaiting=!0,e=this.db.config.appsScriptsURL+"?v="+encodeURI(this.parseVocabularies().join(";")),t.next=5,this.db.utils.AxiosUtils.get(e);case 5:(e=t.sent)&&e.output&&(this.db.localConfig.vocabularyOutput=e.output),this.db.localConfig.translateTime=(new Date).getTime(),this.isWaiting=!1;case 9:case"end":return t.stop()}},t,this)})),function(){return a.apply(this,arguments)}),parseVocabularies:function(){var t=this.db.localConfig.vocabularyInput.trim().split("\n").filter(function(t){return""!==t.trim()}).map(function(t){return t.trim()});return i()(new Set(t))},addDictionary:function(){}}},o=(o.a,r(89),r(15)),r=(r(91),(void 0)(u,n,[],!1,null,"0d37a34f",null));"function"==typeof o.a&&Object(o.a)(r),r.options.__file="src/components/VocabularyTranslator/VocabularyTranslator.vue",e.default=r.exports},98:function(t,e,r){var n=r(99),o=r(100),i=r(101);t.exports=function(t){return n(t)||o(t)||i()}},99:function(t,e){t.exports=function(t){if(Array.isArray(t)){for(var e=0,r=new Array(t.length);e<t.length;e++)r[e]=t[e];return r}}}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/VocabularyTranslator"],{
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml":
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&"}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("form", { staticClass: "VocabularyTranslator ui grid form" }, [
+    _c("div", { staticClass: "equal width row" }, [
+      _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "field" }, [
+          _c("label", { attrs: { for: "vocabulary_input" } }, [
+            _vm._v(_vm._s(_vm.$t("Vocabulary Input")))
+          ]),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.db.localConfig.vocabularyInput,
+                expression: "db.localConfig.vocabularyInput"
+              }
+            ],
+            attrs: { id: "vocabulary_input" },
+            domProps: { value: _vm.db.localConfig.vocabularyInput },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(
+                  _vm.db.localConfig,
+                  "vocabularyInput",
+                  $event.target.value
+                )
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "ui fluid button",
+              class: _vm.computedTranslateButtonClassList,
+              attrs: { type: "button" },
+              on: { click: _vm.startTranslate }
+            },
+            [
+              _vm._v(
+                "\n              " +
+                  _vm._s(_vm.$t("Translate")) +
+                  "\n            "
+              )
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: " field" }, [
+          _c("label", { attrs: { for: "vocabulary_output" } }, [
+            _vm._v(_vm._s(_vm.$t("Vocabulary Output")))
+          ]),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.db.localConfig.vocabularyOutput,
+                expression: "db.localConfig.vocabularyOutput"
+              }
+            ],
+            attrs: { id: "vocabulary_output" },
+            domProps: { value: _vm.db.localConfig.vocabularyOutput },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(
+                  _vm.db.localConfig,
+                  "vocabularyOutput",
+                  $event.target.value
+                )
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "ui fluid buttons" }, [
+            _c(
+              "button",
+              {
+                staticClass: "ui button",
+                class: _vm.computedCopyButtonClassList,
+                attrs: { type: "button" },
+                on: { click: _vm.copy }
+              },
+              [
+                _vm._v(
+                  "\n              " + _vm._s(_vm.$t("Copy")) + "\n            "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "ui button",
+                class: _vm.computedAddDictionaryButtonClassList,
+                attrs: { type: "button" },
+                on: { click: _vm.addDictionary }
+              },
+              [
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.$t("Add to Dictionary")) +
+                    "\n            "
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("65259d88", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true&":
+/*!******************************************************************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true& ***!
+  \******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js&?7c50":
+/*!**********************************************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VocabularyTranslator_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./VocabularyTranslator.js?vue&type=script&lang=js& */ "./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js&?b396");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_VocabularyTranslator_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js&?b396":
+/*!**********************************************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let app = {
+  props: ['db'],
+  components: {
+    // DataTaskManager: () => import(/* webpackChunkName: "components/DataTaskManager" */ './DataTaskManager/DataTaskManager.vue')
+  },
+  data () {    
+    this.$i18n.locale = this.db.localConfig.locale
+    return {
+      isWaiting: false
+    }
+  },
+  watch: {
+    'db.localConfig.locale'() {
+      this.$i18n.locale = this.db.localConfig.locale;
+    },
+    'db.localConfig.vocabularyInput'() {
+      this.db.localConfig.setVocabularyTime = (new Date()).getTime()
+    },
+  },
+  computed: {
+    computedTranslateButtonClassList () {
+      let classList = ['ui', 'fluid']
+
+      let vocabularyInput = this.db.localConfig.vocabularyInput
+      if (vocabularyInput.trim() === '' || this.isWaiting === true) {
+        classList.push('disabled') 
+      }
+      else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
+        classList.push('positive')
+      }
+
+      classList.push('button')
+
+      return classList
+    },
+    computedAddDictionaryButtonClassList () {
+      let classList = ['ui']
+
+      let vocabularyOutput = this.db.localConfig.vocabularyOutput
+      if (vocabularyOutput.trim && vocabularyOutput.trim() === '') {
+        classList.push('disabled')
+      }
+
+      classList.push('button')
+      
+      return classList
+    },
+    computedCopyButtonClassList () {
+      let classList = ['ui']
+
+      let vocabularyOutput = this.db.localConfig.vocabularyOutput
+      if (vocabularyOutput.trim && vocabularyOutput.trim() === '') {
+        classList.push('disabled')
+      }
+      else if (this.db.config.vocabularyOutputCopied === false) {
+        classList.push('positive')
+      }
+
+      classList.push('button')
+      
+      return classList
+    }
+  },
+  mounted() {
+    
+  },
+  methods: {
+    startTranslate: async function() {
+      this.isWaiting = true
+
+      // =================================================================
+
+      let vocabularyList = this.parseVocabularies()
+
+      let vocabularyCached = this.checkCachedVocabularies(vocabularyList)
+
+      let vocabulariesToQuery = this.parseVocabulariesToQuery(vocabularyCached)
+      // console.log(vocabulariesToQuery)
+
+      // =================================================================
+
+      let vocabularyCachedQueried
+      if (vocabulariesToQuery.length > 0) {
+        let url = this.db.config.appsScriptsURL
+        url = url + '?v=' + encodeURI(vocabulariesToQuery.join(';')) +
+          '&ls=' + this.db.localConfig.languageSource +
+          '&lt=' + this.db.localConfig.languageTarget
+
+        // console.log(url)
+        // return false
+        let result = await this.db.utils.AxiosUtils.get(url)
+
+        // =================================================================
+
+        vocabularyCachedQueried = this.cacheQueryResult(result.output, vocabularyCached)
+      }
+      else {
+        vocabularyCachedQueried = vocabularyCached
+      }
+
+      let vocabularyOutput = this.flatVocabularyCachedQueried(vocabularyCachedQueried)
+
+      // =================================================================
+      // console.log(vocabularyOutput)
+      this.db.localConfig.vocabularyOutput = vocabularyOutput.join('\n')
+        
+
+      // =================================================================
+      
+      this.db.localConfig.translateTime = (new Date()).getTime()
+      this.isWaiting = false
+      this.db.config.vocabularyOutputCopied = false
+    },
+    parseVocabularies: function () {
+      let output =  this.db.localConfig.vocabularyInput.trim().split('\n').filter((line) => line.trim() !== '').map(l => l.trim())
+      return [...new Set(output)]
+    },
+    buildCacheKey: function (vocabulary) {
+      return vocabulary + ';' + this.db.localConfig.languageSource + ';' + this.db.localConfig.languageTarget
+    },
+    checkCachedVocabularies: function (vocabularyList) {
+      return vocabularyList.map(vocabulary => {
+        let key = this.buildCacheKey(vocabulary)
+
+        if (this.db.localConfig.queryCache[key]) {
+          return {
+            vocabulary,
+            note: this.db.localConfig.queryCache[key]
+          }
+        }
+
+        // @TODO 這裡還需要加入字典的查詢
+
+        return {
+          vocabulary,
+          note: null
+        }
+      })
+    },
+    parseVocabulariesToQuery: function (vocabularyCached) {
+      return vocabularyCached.filter(v => v.note === null).map(v => v.vocabulary)
+    },
+    cacheQueryResult: function (result, vocabularyCached) {
+      let resultMap = {}
+      result.split('\n').forEach(line => {
+        if (line.indexOf('/') === -1) {
+          return false
+        }
+
+        let vocabulary = line.slice(0, line.indexOf('/')).trim()
+
+        resultMap[vocabulary] = line
+
+        let key = this.buildCacheKey(vocabulary)
+        this.db.localConfig.queryCache[key] = line
+      })
+
+      for (let i = 0; i < vocabularyCached.length; i++) {
+        if (vocabularyCached[i].note) {
+          continue
+        }
+
+        let {vocabulary} = vocabularyCached[i]
+        vocabularyCached[i].note = resultMap[vocabulary]
+      }
+
+      return vocabularyCached
+    },
+    flatVocabularyCachedQueried: function (vocabularyCachedQueried) {
+      return vocabularyCachedQueried.map(({note}) => note)
+    },
+    copy: function () {
+      this.db.utils.ClipboardUtils.copyPlainString(this.db.localConfig.vocabularyOutput)
+      this.db.config.vocabularyOutputCopied = true
+    },
+    addDictionary: function() {
+      alert('Add dictionary')
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (app);
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&":
+/*!*********************************************************************************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.vue":
+/*!**********************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.vue ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true& */ "./src/components/VocabularyTranslator/VocabularyTranslator.html?vue&type=template&id=0d37a34f&scoped=true&");
+/* harmony import */ var _VocabularyTranslator_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./VocabularyTranslator.js?vue&type=script&lang=js& */ "./src/components/VocabularyTranslator/VocabularyTranslator.js?vue&type=script&lang=js&?7c50");
+/* empty/unused harmony star reexport *//* harmony import */ var _VocabularyTranslator_less_vue_type_style_index_0_id_0d37a34f_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true& */ "./src/components/VocabularyTranslator/VocabularyTranslator.less?vue&type=style&index=0&id=0d37a34f&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml */ "./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _VocabularyTranslator_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _VocabularyTranslator_html_vue_type_template_id_0d37a34f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "0d37a34f",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/VocabularyTranslator/VocabularyTranslator.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/VocabularyTranslator/VocabularyTranslator.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fapp%2Fsrc%2Fcomponents%2FVocabularyTranslator%2FVocabularyTranslator.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_VocabularyTranslator_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fapp_2Fsrc_2Fcomponents_2FVocabularyTranslator_2FVocabularyTranslator_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ })
+
+}]);
 //# sourceMappingURL=VocabularyTranslator.js.map

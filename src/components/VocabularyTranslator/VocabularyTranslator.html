@@ -16,11 +16,20 @@
           <label for="vocabulary_output">{{ $t('Vocabulary Output') }}</label>
           <textarea id="vocabulary_output" v-model="db.localConfig.vocabularyOutput"></textarea>
 
-          <button class="ui fluid button" type="button"
+
+          <div class="ui fluid buttons">
+            <button class="ui button" type="button"
+              :class="computedCopyButtonClassList"
+              @click="copy">
+              {{ $t('Copy') }}
+            </button>
+            <button class="ui button" type="button"
               :class="computedAddDictionaryButtonClassList"
               @click="addDictionary">
               {{ $t('Add to Dictionary') }}
             </button>
+          </div>
+            
         </div>
     </div>
   </div>

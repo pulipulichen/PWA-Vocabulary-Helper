@@ -5,15 +5,17 @@ let config = {
 
   inited: false,
 
-  appsScriptsURL: `https://script.google.com/macros/s/AKfycbygzXwyB7dn0Zffaa3MT5-Ze_xFLB4UvdzIf2Els02cViSZZYw-KAEBr-U2rd9KZkvh/exec`,
+  appsScriptsURL: `https://script.google.com/macros/s/AKfycbzxZMiEK1lvFrT1GrzRV-JgpqcKkPdvsVmkm61M8Kx-mw11E50eQKC6_Bc_BqVjdBRx/exec`,
 
-  languageInputList: [
+  languageSourceList: [
     'english'
   ],
 
-  languageTransToList: [
-    'chinese'
+  languageTargetList: [
+    'chinese-traditional'
   ],
+
+  vocabularyOutputCopied: false
 }
 
 // ----------------------------------------------------------------

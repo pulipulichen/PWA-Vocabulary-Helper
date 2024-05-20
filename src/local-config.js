@@ -1,8 +1,9 @@
 let localConfig = {
   lastChanged: null,
 
-  languageInput: 'english',
-  languageTransTo: 'chinese',
+  languageSource: 'english',
+  languageTarget: 'chinese-traditional',
+  queryCache: {},
 
   vocabularyInput: `hello`,
   vocabularyOutput: ``,

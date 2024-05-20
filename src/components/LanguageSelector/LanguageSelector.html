@@ -2,11 +2,11 @@
   <div class="equal width row">
     <div class="column">
         <div class="field">
-            <label for="language_input">{{ $t('Input Language') }}</label>
-            <select id="language_input" 
+            <label for="language_source">{{ $t('Language Source') }}</label>
+            <select id="language_source" 
               class="ui fluid dropdown"
-              :v-model="db.localConfig.languageInput">
-                <option v-for="lang in db.config.languageInputList"
+              :v-model="db.localConfig.languageSource">
+                <option v-for="lang in db.config.languageSourceList"
                   :value="lang">
                   {{ $t(lang) }}
                 </option>
@@ -15,11 +15,11 @@
     </div>
     <div class="column">
         <div class=" field">
-            <label for="language_trans_to">{{ $t('Trans to:') }}</label>
-            <select id="language_trans_to" 
+            <label for="language_target">{{ $t('Trans to:') }}</label>
+            <select id="language_target" 
               class="ui fluid dropdown"
-              :v-model="db.localConfig.languageTransTo">
-                <option v-for="lang in db.config.languageTransToList"
+              :v-model="db.localConfig.languageTarget">
+                <option v-for="lang in db.config.languageTargetList"
                   :value="lang">
                   {{ $t(lang) }}
                 </option>
