@@ -1,0 +1,22 @@
+<form class="LanguageSelector ui grid">
+  <div class="equal width row">
+    <div class="column">
+        <div class="field">
+            <label for="dictionary">{{ $t('Dictionary') }}</label>
+            <textarea id="dictionary" v-model="db.localConfig.dictionaryText"></textarea>
+
+            <div class="ui fluid buttons"
+              :class="computedButtonsClassList">
+              <button type="button" class="ui button"
+                @click="sortDictionary">
+                {{ $t('Sort')}}
+              </button>
+              <button type="button" class="ui button"
+              @click="saveDictionary">
+                {{ $t('Save')}}
+              </button>
+            </div>
+        </div>
+    </div>
+  </div>
+</form>

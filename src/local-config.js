@@ -1,7 +1,16 @@
 let localConfig = {
   lastChanged: null,
 
-  predefinedList: ``,
+  languageInput: 'english',
+  languageTransTo: 'chinese',
+
+  vocabularyInput: `hello`,
+  vocabularyOutput: ``,
+
+  setVocabularyTime: 0,
+  translateTime: 0,
+
+  dictionaryText: ``,
 }
 
 // ----------------------------------------------------------------

@@ -4,7 +4,9 @@
 let Index = {
   props: ['db', 'view', 'search'],
   components: {
-    // ConfigurationPanel: () => import(/* webpackChunkName: "components/ConfigurationPanel" */ './ConfigurationPanel/ConfigurationPanel.vue'),
+    LanguageSelector: () => import(/* webpackChunkName: "components/LanguageSelector" */ './LanguageSelector/LanguageSelector.vue'),
+    VocabularyTranslator: () => import(/* webpackChunkName: "components/VocabularyTranslator" */ './VocabularyTranslator/VocabularyTranslator.vue'),
+    VocabularyDictionary: () => import(/* webpackChunkName: "components/VocabularyDictionary" */ './VocabularyDictionary/VocabularyDictionary.vue'),
   },
   data() {
     this.$i18n.locale = this.db.config.localConfig

@@ -1,0 +1,30 @@
+<form class="LanguageSelector ui grid">
+  <div class="equal width row">
+    <div class="column">
+        <div class="field">
+            <label for="language_input">{{ $t('Input Language') }}</label>
+            <select id="language_input" 
+              class="ui fluid dropdown"
+              :v-model="db.localConfig.languageInput">
+                <option v-for="lang in db.config.languageInputList"
+                  :value="lang">
+                  {{ $t(lang) }}
+                </option>
+            </select>
+        </div>
+    </div>
+    <div class="column">
+        <div class=" field">
+            <label for="language_trans_to">{{ $t('Trans to:') }}</label>
+            <select id="language_trans_to" 
+              class="ui fluid dropdown"
+              :v-model="db.localConfig.languageTransTo">
+                <option v-for="lang in db.config.languageTransToList"
+                  :value="lang">
+                  {{ $t(lang) }}
+                </option>
+            </select>
+        </div>
+    </div>
+  </div>
+</form>

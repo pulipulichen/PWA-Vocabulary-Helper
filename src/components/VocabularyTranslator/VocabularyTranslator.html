@@ -1,0 +1,27 @@
+<form class="VocabularyTranslator ui grid">
+  <div class="equal width row">
+    <div class="column">
+        <div class="field">
+            <label for="vocabulary_input">{{ $t('Vocabulary Input') }}</label>
+            <textarea id="vocabulary_input" v-model="db.localConfig.vocabularyInput"></textarea>
+            <button class="ui fluid button" type="button"
+              :class="computedTranslateButtonClassList"
+              @click="startTranslate">
+              {{ $t('Translate') }}
+            </button>
+        </div>
+    </div>
+    <div class="column">
+        <div class=" field">
+          <label for="vocabulary_output">{{ $t('Vocabulary Output') }}</label>
+          <textarea id="vocabulary_output" v-model="db.localConfig.vocabularyOutput"></textarea>
+
+          <button class="ui fluid button" type="button"
+              :class="computedAddDictionaryButtonClassList"
+              @click="addDictionary">
+              {{ $t('Add to Dictionary') }}
+            </button>
+        </div>
+    </div>
+  </div>
+</form>

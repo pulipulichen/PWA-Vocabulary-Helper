@@ -3,7 +3,17 @@ let appName = 'PWA-Online-Voting'
 let config = {
   version: '20240520-1716',
 
-  appsScriptsURL: ``
+  inited: false,
+
+  appsScriptsURL: ``,
+
+  languageInputList: [
+    'english'
+  ],
+
+  languageTransToList: [
+    'chinese'
+  ],
 }
 
 // ----------------------------------------------------------------

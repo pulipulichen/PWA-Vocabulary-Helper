@@ -1,6 +1,19 @@
 <div class="Index"
   v-show="db.config.inited">
+  
+  <LanguageSelector 
+    ref="LanguageSelector"
+    :db="db">
+  </LanguageSelector>
 
-  Hello world.
+  <VocabularyTranslator
+    ref="VocabularyTranslator"
+    :db="db">
+  </VocabularyTranslator>
+  
+  <VocabularyDictionary
+    ref="VocabularyDictionary"
+    :db="db">
+  </VocabularyDictionary>
 
 </div>
