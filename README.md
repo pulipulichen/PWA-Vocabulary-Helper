@@ -18,3 +18,5 @@ https://pulipulichen.github.io/PWA-Vocabulary-Helper/
 - Google Apps Scripts
 
 # Citation
+
+Chen, Y.-T. (2024). *PWA-Vocabulary-Helper* (20240521.013026) [Computer software]. Zenodo. [https://doi.org/10.5281/ZENODO.11222774](https://doi.org/10.5281/ZENODO.11222774)
