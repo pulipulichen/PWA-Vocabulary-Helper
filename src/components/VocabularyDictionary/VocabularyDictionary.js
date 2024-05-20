@@ -98,7 +98,7 @@ let app = {
       this.isWaitingDownload = true
 
       let dateString = dayjs().format('YYYYMMDD-HHmmSS')
-      let filename = `voc-hlper-${dateString}.txt`
+      let filename = `voc-helper-${dateString}.txt`
 
       this.db.utils.FileUtils.download(filename, this.db.localConfig.dictionaryText)
 
