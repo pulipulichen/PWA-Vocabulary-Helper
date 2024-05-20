@@ -18,7 +18,3 @@ https://pulipulichen.github.io/PWA-Vocabulary-Helper/
 - Google Apps Scripts
 
 # Citation
-
----- 
-
-# Maintain

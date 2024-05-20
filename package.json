@@ -23,7 +23,9 @@
     "url": "git+https://pulipuli.chen@gmail.com@github.com/pulipulichen/PWA-Vocabulary-Helper.git"
   },
   "keywords": [
-    "Machine Learning"
+    "Vue.js",
+    "PWA",
+    "Google Apps Scripts"
   ],
   "author": {
     "name": "Yung-Ting Chen",
