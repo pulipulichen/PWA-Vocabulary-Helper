@@ -6,6 +6,7 @@ let app = {
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
     return {
+      isWaiting: false
     }
   },
   watch: {
@@ -21,8 +22,8 @@ let app = {
       let classList = ['ui', 'fluid']
 
       let vocabularyInput = this.db.localConfig.vocabularyInput
-      if (vocabularyInput.trim() === '') {
-        classList.push('disabled')
+      if (vocabularyInput.trim() === '' || this.isWaiting === true) {
+        classList.push('disabled') 
       }
       else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
         classList.push('positive')
@@ -50,7 +51,29 @@ let app = {
   },
   methods: {
     startTranslate: async function() {
+      this.isWaiting = true
+
+
+      let url = this.db.config.appsScriptsURL
+      url = url + '?v=' + encodeURI(this.parseVocabularies().join(';'))
+
+      let result = await this.db.utils.AxiosUtils.get(url)
+
+      // =================================================================
+
+      if (result && result.output) {
+        this.db.localConfig.vocabularyOutput = result.output
+      }
+        
+
+      // =================================================================
+      
       this.db.localConfig.translateTime = (new Date()).getTime()
+      this.isWaiting = false
+    },
+    parseVocabularies: function () {
+      let output =  this.db.localConfig.vocabularyInput.trim().split('\n').filter((line) => line.trim() !== '').map(l => l.trim())
+      return [...new Set(output)]
     },
     addDictionary: function() {
     }

@@ -5,7 +5,7 @@ let config = {
 
   inited: false,
 
-  appsScriptsURL: ``,
+  appsScriptsURL: `https://script.google.com/macros/s/AKfycbygzXwyB7dn0Zffaa3MT5-Ze_xFLB4UvdzIf2Els02cViSZZYw-KAEBr-U2rd9KZkvh/exec`,
 
   languageInputList: [
     'english'

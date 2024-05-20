@@ -1,12 +1,12 @@
 {
-  "name": "Voting",
-  "short_name": "Voting",
-  "id": "https://pulipulichen.github.io/PWA-Online-Voting/",
+  "name": "Vocabulary Helper",
+  "short_name": "VocHelper",
+  "id": "https://pulipulichen.github.io/PWA-Vocabulary-Helper/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#E1F7F7",
-  "description": "Vote the course!",
+  "description": "To build a list of vocabularies with phonetic symbols and translations.",
   "icons": [{
     "src": "assets/favicon/favicon.png",
     "sizes": "512x512",

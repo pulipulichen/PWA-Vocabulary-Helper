@@ -1,6 +1,10 @@
 let enableServiceWorker = ('serviceWorker' in navigator)
 // enableServiceWorker = false
-if (location.href.startsWith('http://127.0.0.1')) {
+
+// 
+if (location.href.startsWith('http://127.0.0.1') || 
+    location.href.startsWith('http://localhost') ||
+    location.href.startsWith('https://dangerous-lizard-99.telebit.io/')) {
   enableServiceWorker = false
 }
 
