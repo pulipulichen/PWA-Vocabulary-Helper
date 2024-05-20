@@ -119,6 +119,8 @@ let app = {
       return vocabulary + ';' + this.db.localConfig.languageSource + ';' + this.db.localConfig.languageTarget
     },
     checkCachedVocabularies: function (vocabularyList) {
+      let dictionaryMap = this.$parent.$refs.VocabularyDictionary.dictionaryMap
+
       return vocabularyList.map(vocabulary => {
         let key = this.buildCacheKey(vocabulary)
 
@@ -130,6 +132,12 @@ let app = {
         }
 
         // @TODO 這裡還需要加入字典的查詢
+        if (dictionaryMap[vocabulary]) {
+          return {
+            vocabulary,
+            note: dictionaryMap[vocabulary],
+          }
+        }
 
         return {
           vocabulary,
@@ -174,7 +182,7 @@ let app = {
       this.db.config.vocabularyOutputCopied = true
     },
     addDictionary: function() {
-      alert('Add dictionary')
+      this.$parent.$refs.VocabularyDictionary.addDictionary()
     }
   }
 }
