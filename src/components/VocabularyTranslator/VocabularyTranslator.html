@@ -4,11 +4,25 @@
         <div class="field">
             <label for="vocabulary_input">{{ $t('Vocabulary Input') }}</label>
             <textarea id="vocabulary_input" v-model="db.localConfig.vocabularyInput"></textarea>
-            <button class="ui fluid button" type="button"
-              :class="computedTranslateButtonClassList"
-              @click="startTranslate">
-              {{ $t('Translate') }}
-            </button>
+            <div class="ui fluid buttons">
+              <button class="ui button" type="button"
+                v-if="isSpeaking === false"
+                :class="computedSpeakButtonClassList"
+                @click="startSpeak">
+                {{ $t('Speak') }}
+              </button>
+              <button class="ui positive button" type="button"
+                v-if="isSpeaking === true"
+                @click="stopSpeak">
+                {{ $t('Stop Speak') }}
+              </button>
+              <button class="ui button" type="button"
+                :class="computedTranslateButtonClassList"
+                @click="startTranslate">
+                {{ $t('Translate') }}
+              </button>
+            </div>
+              
         </div>
     </div>
     <div class="column">

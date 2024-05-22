@@ -6,7 +6,8 @@ let app = {
   data () {    
     this.$i18n.locale = this.db.localConfig.locale
     return {
-      isWaiting: false
+      isWaiting: false,
+      isSpeaking: false
     }
   },
   watch: {
@@ -18,8 +19,23 @@ let app = {
     },
   },
   computed: {
+    computedSpeakButtonClassList () {
+      let classList = ['ui']
+
+      let vocabularyInput = this.db.localConfig.vocabularyInput
+      if (vocabularyInput.trim() === '' || this.isWaiting === true) {
+        classList.push('disabled') 
+      }
+      else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
+        classList.push('positive')
+      }
+
+      classList.push('button')
+
+      return classList
+    },
     computedTranslateButtonClassList () {
-      let classList = ['ui', 'fluid']
+      let classList = ['ui']
 
       let vocabularyInput = this.db.localConfig.vocabularyInput
       if (vocabularyInput.trim() === '' || this.isWaiting === true) {
@@ -110,6 +126,23 @@ let app = {
       this.db.localConfig.translateTime = (new Date()).getTime()
       this.isWaiting = false
       this.db.config.vocabularyOutputCopied = false
+    },
+    startSpeak: async function () {
+      let vocabularyList = this.parseVocabularies()
+      this.isSpeaking = true
+
+      for (let vocabulary of vocabularyList) {
+        await this.db.utils.SpeakUtils.speak(vocabulary)
+        if (this.isSpeaking === false) {
+          return false
+        }
+      }
+
+      this.isSpeaking = false
+    },
+    stopSpeak: async function () {
+      await this.db.utils.SpeakUtils.speakOrStop()
+      this.isSpeaking = false
     },
     parseVocabularies: function () {
       let output =  this.db.localConfig.vocabularyInput.trim().split('\n').filter((line) => line.trim() !== '').map(l => l.trim())
