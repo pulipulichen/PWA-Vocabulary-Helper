@@ -23,11 +23,8 @@ let app = {
       let classList = ['ui']
 
       let vocabularyInput = this.db.localConfig.vocabularyInput
-      if (vocabularyInput.trim() === '' || this.isWaiting === true) {
+      if (vocabularyInput.trim() === '') {
         classList.push('disabled') 
-      }
-      else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
-        classList.push('positive')
       }
 
       classList.push('button')
