@@ -6,6 +6,11 @@
             <textarea id="vocabulary_input" v-model="db.localConfig.vocabularyInput"></textarea>
             <div class="ui fluid buttons">
               <button class="ui button" type="button"
+                :class="computedTranslateButtonClassList"
+                @click="startTranslate">
+                {{ $t('Translate') }}
+              </button>
+              <button class="ui button" type="button"
                 v-if="isSpeaking === false"
                 :class="computedSpeakButtonClassList"
                 @click="startSpeak">
@@ -15,11 +20,6 @@
                 v-if="isSpeaking === true"
                 @click="stopSpeak">
                 {{ $t('Stop Speak') }}
-              </button>
-              <button class="ui button" type="button"
-                :class="computedTranslateButtonClassList"
-                @click="startTranslate">
-                {{ $t('Translate') }}
               </button>
             </div>
               
