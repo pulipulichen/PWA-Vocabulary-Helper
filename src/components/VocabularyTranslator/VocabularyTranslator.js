@@ -39,7 +39,7 @@ let app = {
 
       let vocabularyInput = this.db.localConfig.vocabularyInput
       if (vocabularyInput.trim() === '' || this.isWaiting === true) {
-        classList.push('disabled') 
+        classList.push('disabled negative') 
       }
       else if (this.db.localConfig.setVocabularyTime > this.db.localConfig.translateTime) {
         classList.push('positive')
