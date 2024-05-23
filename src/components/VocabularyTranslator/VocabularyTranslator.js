@@ -19,6 +19,10 @@ let app = {
     },
   },
   computed: {
+    computedVocabularyList () {
+      let output =  this.db.localConfig.vocabularyInput.trim().split('\n').filter((line) => line.trim() !== '').map(l => l.trim())
+      return [...new Set(output)]
+    },
     computedSpeakButtonClassList () {
       let classList = ['ui']
 
@@ -212,6 +216,9 @@ let app = {
     },
     addDictionary: function() {
       this.$parent.$refs.VocabularyDictionary.addDictionary()
+    },
+    buildLink: function (vocabulary) {
+      return `https://dictionary.cambridge.org/dictionary/${this.db.localConfig.languageSource}-${this.db.localConfig.languageTarget}/${vocabulary}`
     }
   }
 }

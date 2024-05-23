@@ -22,7 +22,9 @@
                 {{ $t('Stop Speak') }}
               </button>
             </div>
+
               
+
         </div>
     </div>
     <div class="column">
@@ -51,5 +53,14 @@
             
         </div>
     </div>
+  </div>
+
+  <div class="ui blue compact basic buttons">
+    <a v-for="vocabulary in computedVocabularyList"
+      class="ui button"
+      :href="buildLink(vocabulary)"
+      :target="buildCacheKey(vocabulary)">
+      {{ vocabulary }}
+    </a>
   </div>
 </form>
