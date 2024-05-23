@@ -16,6 +16,10 @@ let app = {
     },
     'db.localConfig.vocabularyInput'() {
       this.db.localConfig.setVocabularyTime = (new Date()).getTime()
+
+      if (this.db.localConfig.vocabularyInput.endsWith('\n') === false) {
+        this.db.localConfig.vocabularyInput = this.db.localConfig.vocabularyInput + '\n'
+      }
     },
   },
   computed: {
