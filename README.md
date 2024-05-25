@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/803200441.svg)](https://zenodo.org/doi/10.5281/zenodo.11222774)
 
-# PWA-Vocabulary-Helper
+# PWA-Vocabulary-Helper: 單字查詢器
 
 To build a list of vocabularies with phonetic symbols and translations.
 
@@ -12,7 +12,7 @@ To build a list of vocabularies with phonetic symbols and translations.
 
 https://pulipulichen.github.io/PWA-Vocabulary-Helper/
 
-# Key techniques
+# Techniques
 
 - Vue.js
 - Google Apps Scripts
